@@ -1,4 +1,4 @@
-﻿-- Get the required services
+
 local SoundService = game:GetService("SoundService")
 local RunService = game:GetService("RunService")
 local plr = game:GetService("Players").LocalPlayer
@@ -86,7 +86,7 @@ local function CheckIfAudiosDownloaded()
 CheckIfAudiosDownloaded()
 
 
--- Mapping of old SoundIds to new replacements
+
 local soundReplacements = {
     [133273560899979] = getcustomasset("theforsaken/Assets/Fuck.frsk"),
 	[12119890576] = getcustomasset("theforsaken/Assets/what.frsk3"),
@@ -107,7 +107,7 @@ local sfxReplacements = {
 }
 
 
--- Function to check and replace sound ID
+
 local function replaceSoundId()
     local currentSound = SoundService.mainSounds:FindFirstChild("current")
     if currentSound and currentSound:IsA("Sound") then
